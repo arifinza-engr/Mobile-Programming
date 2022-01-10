@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Food App</string>
+    <string name="nama_item">NAMA ITEM</string>
+    <string name="harga">HARGA</string>
+    <string name="todo">TODO</string>
+    <string name="masukan_nama_makanan">MASUKAN NAMA MAKANAN</string>
+    <string name="rp_harga_makanan">RP. HARGA MAKANAN</string>
+    <string name="nama_makanan">Nama Makanan</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="pesan_via_whatsapp_sekarang">PESAN VIA WHATSAPP SEKARANG</string>
+    <string name="lihat_lokasi">LIHAT LOKASI</string>
+</resources>

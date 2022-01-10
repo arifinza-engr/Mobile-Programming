@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_judul1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="151dp"
+        android:text="Luas Segitiga Sama Sisi"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:id="@+id/txt_judul2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="285dp"
+        android:text="Luas Lingkaran"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <!--    Persegi-->
+
+    <TextView
+        android:id="@+id/txt_panjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_judul"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="37dp"
+        android:text="Panjang"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:id="@+id/txt_lebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lebar"
+        android:layout_alignStart="@+id/txt_panjang"
+        android:layout_alignBottom="@+id/lebar"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="11dp"
+        android:text="Lebar"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <EditText
+        android:id="@+id/panjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_judul"
+        android:layout_alignStart="@+id/txt_judul"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Masukkan Panjang"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+
+    <!--    Segitiga-->
+
+
+    <EditText
+        android:id="@+id/lebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/panjang"
+        android:layout_alignStart="@+id/panjang"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:hint="Masukkan Lebar"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+
+    <!--    Lingkaran-->
+
+
+    <TextView
+        android:id="@+id/txt_alas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_lebar"
+        android:layout_alignStart="@+id/txt_lebar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="64dp"
+        android:text="Alas"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:id="@+id/txt_tinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_alas"
+        android:layout_alignStart="@+id/alas"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="21dp"
+        android:text="Tinggi"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <EditText
+        android:id="@+id/alas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_judul"
+        android:layout_alignStart="@+id/txt_judul"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="156dp"
+        android:ems="10"
+        android:hint="Masukkan Alas"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/tinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lebar"
+        android:layout_alignStart="@+id/panjang"
+        android:layout_alignLeft="@+id/panjang"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="91dp"
+        android:ems="10"
+        android:hint="Masukkan Tinggi"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+
+    <!--    Akhir Linkaran-->
+
+    <TextView
+        android:id="@+id/txt_jari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_tinggi"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="63dp"
+        android:text="Jari-jari"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <EditText
+        android:id="@+id/jari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lebar"
+        android:layout_alignStart="@+id/tinggi"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="173dp"
+        android:ems="10"
+        android:hint="Masukkan Jari-jari"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jari"
+        android:layout_alignStart="@+id/jari"
+        android:layout_alignEnd="@+id/jari"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="99dp"
+        android:text="HASIL"
+        tools:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/txt_hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="40dp"
+        android:text="Luas dan Keliling Persegi Panjang Adalah:"
+        android:textColor="@android:color/holo_red_light"
+        tools:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/txt_hasil1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_hasil"
+        android:layout_marginTop="20dp"
+        android:text="Luas dan Keliling Segitiga Adalah :"
+        android:textColor="@android:color/holo_red_light"
+        tools:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/txt_hasil2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_hasil1"
+        android:layout_marginTop="19dp"
+        android:text="Luas dan Keliling Lingkaran Adalah:"
+        android:textColor="@android:color/holo_red_light"
+        tools:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/txt_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Luas Persegi Panjang"
+        android:textColor="@android:color/holo_blue_dark" />
+
+</RelativeLayout>

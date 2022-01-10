@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="right|center_vertical"
+        android:maxLength="16"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        android:typeface="serif"
+        tools:ignore="RtlHardcoded" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtScreen"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btnSeven"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:text="7"
+                android:textSize="30sp"
+                tools:ignore="NestedWeights" />
+            <Button
+                android:layout_width="0dp"
+                android:background="@drawable/button"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:id="@+id/btnEight"
+                android:text="8"
+                style="?android:attr/buttonBarButtonStyle" />
+            <Button
+                android:layout_width="0dp"
+                android:background="@drawable/button"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:id="@+id/btnNine"
+                android:text="9"
+                style="?android:attr/buttonBarButtonStyle" />
+            <Button
+                android:layout_width="0dp"
+                android:background="@drawable/button"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:id="@+id/btnDivide"
+                android:text="/"
+                style="?android:attr/buttonBarButtonStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="0dp"
+                android:background="@drawable/button"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:id="@+id/btnFour"
+                android:text="4"
+                style="?android:attr/buttonBarButtonStyle"
+                tools:ignore="NestedWeights" />
+            <Button
+                android:layout_width="0dp"
+                android:background="@drawable/button"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:id="@+id/btnFive"
+                android:text="5"
+                style="?android:attr/buttonBarButtonStyle" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:background="@drawable/button"
+                android:id="@+id/btnSix"
+                android:text="6"
+                style="?android:attr/buttonBarButtonStyle" />
+            <Button
+                android:layout_width="0dp"
+                android:background="@drawable/button"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:id="@+id/btnMultiply"
+                android:text="*"
+                style="?android:attr/buttonBarButtonStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btnOne"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:text="1"
+                android:textSize="30sp"
+                tools:ignore="NestedWeights" />
+            <Button
+                android:layout_width="0dp"
+                android:background="@drawable/button"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:id="@+id/btnTwo"
+                android:text="2"
+                style="?android:attr/buttonBarButtonStyle" />
+            <Button
+                android:layout_width="0dp"
+                android:background="@drawable/button"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:id="@+id/btnThree"
+                android:text="3"
+                style="?android:attr/buttonBarButtonStyle" />
+            <Button
+                android:layout_width="0dp"
+                android:background="@drawable/button"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:id="@+id/btnSubtract"
+                android:text="-"
+                style="?android:attr/buttonBarButtonStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="0dp"
+                android:background="@drawable/button"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:id="@+id/btnDot"
+                android:text="."
+                style="?android:attr/buttonBarButtonStyle"
+                tools:ignore="NestedWeights" />
+            <Button
+                android:layout_width="0dp"
+                android:background="@drawable/button"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:id="@+id/btnZero"
+                android:text="0"
+                style="?android:attr/buttonBarButtonStyle" />
+            <Button
+                android:layout_width="0dp"
+                android:background="@drawable/button"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:id="@+id/btnClear"
+                android:text="C"
+                style="?android:attr/buttonBarButtonStyle" />
+            <Button
+                android:layout_width="0dp"
+                android:background="@drawable/button"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:id="@+id/btnAdd"
+                android:text="+"
+                style="?android:attr/buttonBarButtonStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/button"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:id="@+id/btnEqual"
+                android:text="="
+                tools:ignore="NestedWeights" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
